@@ -4,7 +4,7 @@ A simple fullstack user management app built with:
 
 - ✅ React (frontend)
 - ✅ Express & Node.js (backend)
-- ✅ JSON as mock database
+- ✅ MongoDB database
 - ✅ Full CRUD (Create, Read, Update, Delete)
 - ✅ User authentication (Login)
 - ✅ Message feedback with success & error indicators
