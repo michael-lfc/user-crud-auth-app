@@ -23,7 +23,7 @@ A simple fullstack user management app built with:
 
 - Frontend: React, React Router, Context API
 - Backend: Node.js, Express
-- Data: MongoDB
+- Database: MongoDB
 - Styling: Inline styles / basic CSS
 
 ## 🚀 Getting Started
