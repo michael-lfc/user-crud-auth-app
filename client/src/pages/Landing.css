@@ -1,0 +1,85 @@
+.landing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f9f9f9, #eaeaea);
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.landing-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.landing-content p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #0056b3;
+}
+
+.secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: #495057;
+}
+
+.landing-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* 🔁 Mobile Responsive */
+@media (max-width: 768px) {
+  .landing-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .landing-buttons {
+    justify-content: center;
+  }
+
+  .landing-image {
+    margin-top: 2rem;
+  }
+}

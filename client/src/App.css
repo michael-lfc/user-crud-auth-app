@@ -1,0 +1,127 @@
+/* ==== General Styles ==== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* ==== Navbar ==== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+nav button:hover {
+  background-color: #e60000;
+}
+
+/* ==== Main Content Area ==== */
+main {
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+}
+
+/* ==== Form Styles ==== */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #000;
+}
+
+form p {
+  margin-top: 1rem;
+  text-align: center;
+  color: red;
+}
+
+/* ==== Responsive Design ==== */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a,
+  nav button {
+    margin: 0.5rem 0 0 0;
+  }
+
+  form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
